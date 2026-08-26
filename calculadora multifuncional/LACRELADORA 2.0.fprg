@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="LACRELADORA"/>
+        <attribute name="authors" value="RafaelOliveiradaSilv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-24 03:56:19 "/>
+        <attribute name="created" value="UmFmYWVsT2xpdmVpcmFkYVNpbHY7REVTS1RPUC1VVElPMExWOzIwMjYtMDgtMjQ7IjAyOjMwOjUxICI7NDMyOQ=="/>
+        <attribute name="edited" value="UmFmYWVsT2xpdmVpcmFkYVNpbHY7REVTS1RPUC1VVElPMExWOzIwMjYtMDgtMjQ7IjAzOjIyOjAyICI7MTA7Ozs7O0NhbGN1bGFkb3JhTXVsdGlmdW5jaW9uYWwgKDEpLmZwcmc7ODAxNA=="/>
+        <attribute name="edited" value="UmFmYWVsT2xpdmVpcmFkYVNpbHY7REVTS1RPUC1VVElPMExWOzIwMjYtMDgtMjQ7IjAzOjU2OjE5ICI7Mjs0NDUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="op&#231;&#227;o" type="Integer" array="False" size=""/>
+            <declare name="n1, n2, n3, resultado" type="Real" array="False" size=""/>
+            <declare name="base, expoente" type="Real" array="False" size=""/>
+            <declare name="raio" type="Real" array="False" size=""/>
+            <declare name="baseret, alturaret" type="Real" array="False" size=""/>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <assign variable="op&#231;&#227;o" expression="0"/>
+            <while expression="op&#231;&#227;o&lt;&gt;11">
+                <output expression="&quot;========================================&quot;" newline="True"/>
+                <output expression="&quot;CALCULADORA MULTIFUNCIONAL&quot;" newline="True"/>
+                <output expression="&quot;(Edi&#231;&#227;o Terras Tupiniquins)&quot;" newline="True"/>
+                <output expression="&quot;1-soma&quot;" newline="True"/>
+                <output expression="&quot;2-subtra&#231;&#227;o&quot;" newline="True"/>
+                <output expression="&quot;3-multiplica&#231;&#227;o&quot;" newline="True"/>
+                <output expression="&quot;4-divis&#227;o&quot;" newline="True"/>
+                <output expression="&quot;5-potencia&#231;&#227;o&quot;" newline="True"/>
+                <output expression="&quot;6-raiz quadrada&quot;" newline="True"/>
+                <output expression="&quot;7-&#225;rea do c&#237;rculo&quot;" newline="True"/>
+                <output expression="&quot;8-&#225;rea do ret&#226;ngulo&quot;" newline="True"/>
+                <output expression="&quot;9-celsius para fahrenheit&quot;" newline="True"/>
+                <output expression="&quot;10-m&#233;dia aritm&#233;tica&quot;" newline="True"/>
+                <output expression="&quot;11- Encerrar o Programa&quot;" newline="True"/>
+                <output expression="&quot;========================================&quot;" newline="True"/>
+                <output expression="&quot;Escolha uma op&#231;&#227;o de 1 &#224; 11:&quot;" newline="True"/>
+                <input variable="op&#231;&#227;o"/>
+                <if expression="op&#231;&#227;o=1">
+                    <then>
+                        <output expression="&quot;--- Op&#231;&#227;o 1: Soma ---&quot;" newline="True"/>
+                        <output expression="&quot;digite o primeiro numero&quot;" newline="True"/>
+                        <input variable="n1"/>
+                        <output expression="&quot;digite o segunto numero&quot;" newline="True"/>
+                        <input variable="n2"/>
+                        <assign variable="resultado" expression="n1+n2"/>
+                        <output expression="&quot;Resultado: &quot; &amp; n1 &amp; &quot; + &quot; &amp; n2 &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                        <output expression="&quot;&#233; isso a&#237;, arrasou gata!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="op&#231;&#227;o=2">
+                            <then>
+                                <output expression="&quot;--- Op&#231;&#227;o 2: Subtra&#231;&#227;o ---&quot;" newline="True"/>
+                                <output expression="&quot;digite o primeiro numero&quot;" newline="True"/>
+                                <input variable="n1"/>
+                                <output expression="&quot;digite o segundo numero&quot;" newline="True"/>
+                                <input variable="n2"/>
+                                <assign variable="resultado" expression="n1-n2"/>
+                                <output expression="&quot;Resultado: &quot; &amp; n1 &amp; &quot; - &quot; &amp; n2 &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                <output expression="&quot;menina, voce &#233; dura na queda!&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="op&#231;&#227;o=3">
+                                    <then>
+                                        <output expression="&quot;--- Op&#231;&#227;o 3: Multiplica&#231;&#227;o ---&quot;" newline="True"/>
+                                        <output expression="&quot;digite o primeiro numero&quot;" newline="True"/>
+                                        <input variable="n1"/>
+                                        <output expression="&quot;digite o segundo numero&quot;" newline="True"/>
+                                        <input variable="n2"/>
+                                        <assign variable="resultado" expression="n1*n2"/>
+                                        <output expression="&quot;Resultado: &quot; &amp; n1 &amp; &quot; * &quot; &amp; n2 &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                        <output expression="&quot;Menina que babado viu, t&#244; passada!&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="op&#231;&#227;o=4">
+                                            <then>
+                                                <output expression="&quot;--- Op&#231;&#227;o 4: Divis&#227;o ---&quot;" newline="True"/>
+                                                <output expression="&quot;digite o primeiro numero&quot;" newline="True"/>
+                                                <input variable="n1"/>
+                                                <output expression="&quot;digite o segundo numero&quot;" newline="True"/>
+                                                <input variable="n2"/>
+                                                <if expression="n2=0">
+                                                    <then>
+                                                        <output expression="&quot;Erro: n&#227;o &#233; poss&#237;vel dividir por zero!&quot;" newline="True"/>
+                                                        <output expression="&quot;Nem o universo explica essa conta, viu?&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <assign variable="resultado" expression="n1/n2"/>
+                                                        <output expression="&quot;Resultado: &quot; &amp; n1 &amp; &quot; / &quot; &amp; n2 &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                                        <output expression="&quot;Dividiu certinho, tipo conta de balada.&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <if expression="op&#231;&#227;o=5">
+                                                    <then>
+                                                        <output expression="&quot;--- Op&#231;&#227;o 5: Potencia&#231;&#227;o ---&quot;" newline="True"/>
+                                                        <output expression="&quot;digite a base&quot;" newline="True"/>
+                                                        <input variable="base"/>
+                                                        <output expression="&quot;digite o expoente&quot;" newline="True"/>
+                                                        <input variable="expoente"/>
+                                                        <assign variable="resultado" expression="base^expoente"/>
+                                                        <output expression="&quot;Resultado: &quot; &amp; base &amp; &quot; ^ &quot; &amp; expoente &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                                        <output expression="&quot;subiu de n&#237;vel, tava on&#231;a essa conta!&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="op&#231;&#227;o=6">
+                                                            <then>
+                                                                <output expression="&quot;--- Op&#231;&#227;o 6: Raiz Quadrada ---&quot;" newline="True"/>
+                                                                <output expression="&quot;digite o n&#250;mero&quot;" newline="True"/>
+                                                                <input variable="n1"/>
+                                                                <if expression="n1&lt;0">
+                                                                    <then>
+                                                                        <output expression="&quot;Erro: n&#227;o existe raiz quadrada real de n&#250;mero negativo!&quot;" newline="True"/>
+                                                                        <output expression="&quot;isso a&#237; s&#243; existe no mundo da imagina&#231;&#227;o, mana.&quot;" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <assign variable="resultado" expression="Sqrt(n1)"/>
+                                                                        <output expression="&quot;Resultado: raiz quadrada de &quot; &amp; n1 &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                                                        <output expression="&quot;raiz cravada, sem enrola&#231;&#227;o!&quot;" newline="True"/>
+                                                                    </else>
+                                                                </if>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="op&#231;&#227;o=7">
+                                                                    <then>
+                                                                        <output expression="&quot;--- Op&#231;&#227;o 7: &#193;rea do C&#237;rculo ---&quot;" newline="True"/>
+                                                                        <output expression="&quot;digite o raio&quot;" newline="True"/>
+                                                                        <input variable="raio"/>
+                                                                        <assign variable="resultado" expression="Pi*(raio^2)"/>
+                                                                        <output expression="&quot;Resultado: &#225;rea do c&#237;rculo de raio &quot; &amp; raio &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                                                                        <output expression="&quot;redondinho como devia ser, gata!&quot;" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="op&#231;&#227;o=8">
+                                                                            <then>
+                                                                                <output expression="&quot;--- Op&#231;&#227;o 8: &#193;rea do Ret&#226;ngulo ---&quot;" newline="True"/>
+                                                                                <output expression="&quot;digite a base&quot;" newline="True"/>
+                                                                                <input variable="baseret"/>
+                                                                                <output expression="&quot;digite a altura&quot;" newline="True"/>
+                                                                                <input variable="alturaret"/>
+                                                                                <assign variable="resultado" expression="baseret*alturaret"/>
+                                                                                <output expression="&quot;Resultado: &#225;rea do ret&#226;ngulo = &quot; &amp; resultado" newline="True"/>
+                                                                                <output expression="&quot;quadrado &#233; o passado, ret&#226;ngulo &#233; o futuro!&quot;" newline="True"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="op&#231;&#227;o=9">
+                                                                                    <then>
+                                                                                        <output expression="&quot;--- Op&#231;&#227;o 9: Celsius para Fahrenheit ---&quot;" newline="True"/>
+                                                                                        <output expression="&quot;digite a temperatura em Celsius&quot;" newline="True"/>
+                                                                                        <input variable="celsius"/>
+                                                                                        <assign variable="resultado" expression="(celsius*9/5)+32"/>
+                                                                                        <output expression="&quot;Resultado: &quot; &amp; celsius &amp; &quot; C = &quot; &amp; resultado &amp; &quot; F&quot;" newline="True"/>
+                                                                                        <output expression="&quot;chama o bombeiro!&quot;" newline="True"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="op&#231;&#227;o=10">
+                                                                                            <then>
+                                                                                                <output expression="&quot;--- Op&#231;&#227;o 10: M&#233;dia Aritm&#233;tica ---&quot;" newline="True"/>
+                                                                                                <output expression="&quot;digite o primeiro n&#250;mero&quot;" newline="True"/>
+                                                                                                <input variable="n1"/>
+                                                                                                <output expression="&quot;digite o segundo n&#250;mero&quot;" newline="True"/>
+                                                                                                <input variable="n2"/>
+                                                                                                <output expression="&quot;digite o terceiro n&#250;mero&quot;" newline="True"/>
+                                                                                                <input variable="n3"/>
+                                                                                                <assign variable="resultado" expression="(n1+n2+n3)/3"/>
+                                                                                                <output expression="&quot;Resultado: a m&#233;dia de &quot; &amp; n1 &amp; &quot;, &quot; &amp; n2 &amp; &quot; e &quot; &amp; n3 &amp; &quot; &#233; = &quot; &amp; resultado" newline="True"/>
+                                                                                                <output expression="&quot;nossa eu t&#244; muito equilibrada!&quot;" newline="True"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="op&#231;&#227;o=11">
+                                                                                                    <then>
+                                                                                                        <output expression="&quot;Encerrando o programa, bye bye mana!&quot;" newline="True"/>
+                                                                                                        <output expression="&quot;&#201; isso gente, beijos da Anitta!&quot;" newline="True"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <output expression="&quot;Op&#231;&#227;o inv&#225;lida! Que isso gata, vamos ler direitinho, digite um n&#250;mero entre 1 e 11.&quot;" newline="True"/>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Mas o imetro aprova isso?! bye bye at&#233; a pr&#243;xima!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
